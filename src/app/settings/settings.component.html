@@ -1,0 +1,19 @@
+<div class="container">
+  <h2 class="text-center">
+    change your location
+  </h2>
+  <hr>
+  <div class="jumbotron">
+    <form action="" (ngSubmit) = saveForm()>
+      <div class="form-group">
+        <label for="city">City:</label>
+        <input type="text" [(ngModel)]="city" name="city" id="city" class="form-control" placeholder="enter city..">
+      </div>
+      <div class="form-group">
+        <label for="state">State:</label>
+        <input type="text" [(ngModel)]="state" name="state" id="state" class="form-control" placeholder="enter state.."></div>
+      <input type="submit" class="btn btn-primary" name="" value="save location">
+    </form>
+  </div>
+
+</div>

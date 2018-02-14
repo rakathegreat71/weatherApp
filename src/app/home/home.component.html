@@ -1,0 +1,32 @@
+<div class="container">
+  <div class="heading">
+    <h1>Today's weather</h1>
+    <hr>
+  </div>
+  <div class="jumbotron">
+
+    <div *ngIf="weather" class="row">
+      <div class="col-sm-6">
+        <h2 class="location">
+        {{weather.display_location.full}}
+      </h2>
+        <div class="icon">
+          <img src="{{weather.icon_url}}" alt="">
+        </div>
+        <div class="desc">
+          {{weather.weather}}
+        </div>
+      </div>
+      <div class="col-sm-6">
+        <ul class="list-group">
+          <li class="list-group-item"><strong>Temprature:</strong>
+          {{weather.temperature_string}}</li>
+          <li class="list-group-item"><strong>Relative Humidity:</strong>{{weather.relative_humidity}}</li>
+          <li class="list-group-item"><strong>Dew Point:</strong>{{weather.dewpoint_string}}</li>
+          <li class="list-group-item"><strong>Visibility:</strong>{{weather.visibility_mi}}</li>
+          <li class="list-group-item"><strong>Heat Index:</strong>{{weather.heat_index_string}}</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>

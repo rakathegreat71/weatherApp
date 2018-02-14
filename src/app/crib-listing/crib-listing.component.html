@@ -1,0 +1,25 @@
+<nav class="navbar navbar-dark bg-dark">
+  <div class="container-fluid">
+    <a href="" class="navbar-brand">
+      ShopProp.org
+    </a>
+  </div>
+</nav>
+<div class="container wrapper">
+  <div *ngFor="let crib of cribs">
+  <img src="assets/images/{{crib.image}}.jpg" alt="">
+  <h3>
+    {{crib.address}}
+  </h3>
+  <h4>{{crib.type}}</h4>
+  <p>{{crib.description}}</p>
+  </div>
+</div>
+<!-- <div class="container">
+  <div class="wrapper">
+    <div  *ngFor="let crib of cribs">
+
+    </div>
+  </div>
+
+</div> -->
